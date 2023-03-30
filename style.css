@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: black;
+    color: #fff;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(12, 12, 12, 0.7)),url(Images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.maincontent{
+    padding: 0 8%;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+.btn .lngbtn{
+    display: inline;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+ 
+}
+.lngbtn img{
+    width: 12px;
+    margin-left: 6px;
+    
+}
+.content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 150px;
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.signup{
+
+    margin-top: 20px;
+}
+.signup input{
+font-size: 15px;
+padding: 10px;
+width: 300px;
+/* padding-right: 150px; */
+
+}
+.signup button{
+    border: 0;
+    outline: 0;
+    padding: 13px 20px;
+    color: #fff;
+    background: #db0001;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+
+}
+.subcontainer{
+    padding: 10px 8%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.txt{
+    flex-basis: 50%;
+    text-align: start;
+}
+.txt h2{
+    font-size: 50px;
+    padding: 20px 0;
+    font-weight: 600;
+}
+.txt p{
+    font-size: 20px;
+}
+.tvimg{
+
+    flex-basis: 50%;
+}
+.tvimg img{
+    display: block;
+    width: 90%;
+}
+.faq{
+    text-align: center;
+    padding: 10px 12%;
+}
+.faq h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.ac{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.ac li{
+    padding: 5px;
+    list-style: none;
+    width: 100%;
+}
+.ac li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    background: #353535;
+    position: relative;
+
+}
+.ac li label::after{
+    content: "+";
+    position: absolute;
+    font-size: 35px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.ac .cont{
+    text-align: left;
+    background: #303030;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+.ac input[type="radio"]:checked + label + .cont{
+    max-height: 600px;
+    padding: 15px 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.ac input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.ee{
+   /* position: absolute; */
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+footer h3{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.rows{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+footer .col{
+    flex-basis: 25%;
+    /* flex-grow: 1; */
+    margin-bottom: 20px;
+}
+footer .col a{
+     display: block;
+     text-decoration: underline;
+     color: #777;
+     font-size: 14px;
+     margin-bottom: 10px;
+}
